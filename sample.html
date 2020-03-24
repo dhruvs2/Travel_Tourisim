@@ -1,0 +1,4459 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)file:///home/dhruv/int.html#l3 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+
+
+  .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.checkbox{
+  color:white;
+}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.side{
+  flex:30%;
+  padding:20px;
+}
+
+.sweet {
+  flex: 70%;
+  padding: 20px;
+  margin-left:300px;
+}
+
+.rating{
+  position:absolute;
+  top:4px;
+  left:4px;
+  border-radius:4px;
+  padding:4px 14px;
+  font-weight:700;
+  color:#fff;
+}
+
+.image{
+  position:relative;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom:1px;
+  left:4px;
+  color:#fff;
+}
+
+.bottom-right{
+  position:absolute;
+  bottom:1px;
+  right:4px;
+  color:#fff;
+}
+
+
+.collImgContainer{
+  position:relative;
+}
+
+.flexcont{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+}
+
+.cardsplace{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+</style>
+
+<script src="./sample_files/jquery.min.js"></script>
+
+
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./sample_files/bootstrap.min.css">
+  <script src="./sample_files/jquery.min.js"></script>
+  <script src="./sample_files/popper.min.js"></script>
+  <script src="./sample_files/bootstrap.min.js"></script>
+
+</head>
+
+<body><div class="head" style="margin-left:15%;background-color: #EDF5E1;">
+  <h1 style="text-align:center;padding:5px"> <i> Website Name </i> </h1> <br> <br>
+</div>
+
+  <div class="lol" style="postion:fixed;margin-left:15%">
+    <div class="topnav" id="navbar">
+      <a class="active" href="file:///home/dhruv/int.html#l1">Link1</a>
+      <a href="file:///home/dhruv/int.html#l3">Link2</a>
+      <a href="file:///home/dhruv/int.html#l4">Link3</a>
+      <a href="file:///home/dhruv/int.html#l5">Link4</a>
+      <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search">S</i></button>
+      </div>
+    </div>
+    <!-- Resizable Content -->
+  </div>
+
+
+
+
+<div class="row">
+
+  <div class="side">
+
+    <div class="sidenav" style="width:15%;overflow:auto;">
+
+      <div class="text-warning" style="postion:fixed;font-size:30px"> Themes  </div>
+
+        <div class="themes" style="overflow:auto;height:170px;">
+
+
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Hill Stations</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Beaches</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Trekkings</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Road Trips</label>
+          </div>
+          <div class="checkbox">
+          <label><input type="checkbox" value="">Adventure</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Nature</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Deserts</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Honeymoon</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Wildlife</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Water Activities</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="">Heritage</label>
+            </div>
+       </div>
+
+  <br>
+
+  <div class="text-warning" style="postion:fixed;font-size:30px">Region</div>
+
+  <div class="region" style="overflow:auto;height:170px;">
+
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Across Country</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">North India</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">East India</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">West India</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Central India</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">North-East</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">International</label>
+    </div>
+
+  </div>
+  <br>
+
+
+  <div class="text-warning" style="postion:fixed;font-size:30px">Activities</div>
+
+  <div class="activites" style="overflow:auto;height:170px;">
+
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Water Sports</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Trekking</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Snow Sport</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Extreme Sports</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Adventures</label>
+    </div>
+
+  </div>
+  <br>
+
+  <div class="text-warning" style="postion:fixed;font-size:30px"> Popularity </div>
+  <div class="popularity" style="overflow:auto;height:170px;">
+
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Must Visit</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">You Call</label>
+    </div>
+  </div>
+  <br><br>
+
+
+
+
+    </div>
+
+
+  </div>
+
+    <div class="sweet">
+
+    <div class="cardsplace" style="margin-left:6%">
+        <div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div><div class="card" style="width:400px;margin-left:40px;bottom-margin:10px;">
+
+          <div class="collImgContainer">
+
+            <div class="image">
+              <img class="resultImage lazy" src="./sample_files/GANGTOK.jpg" alt="Card image" style="width:100%">
+              <div class="bottom-left"> <h4> <i> Ganktok,Sikkim </i> </h4><h4> </h4></div>
+                <div class="bottom-right"> <a href="file:///home/dhruv/int.html#morephotos" style="color:white"> More Photos </a> </div>
+                <p class="rating" style="background-color:#247c2a"> 4.4 </p>
+            </div>
+
+         </div>
+
+         <div class="card-body">
+           <div class="places">
+             <p style="font-size:25px; position:relative;"> Places: </p>
+           </div>
+           <div class="filters">
+             <p class="text-primary" style="font-size:20px"> Activities: </p>
+             <div class="besttime">
+               <p> <b> Best Time: </b> </p>
+             </div><div class="content">
+           </div>
+           <h4 class="card-title"></h4>
+           <div>
+             <p class="card-text">Prettily situated on a hillock at an altitude of 1800 meters,
+                                Gangtok can be safely said to be one of the most beautiful hill stations in the country.</p>
+           </div>
+
+        <br>
+
+          <div class="flexcont">
+            <a href="file:///home/dhruv/int.html#" class="btn btn-primary">Read More</a> <br>
+            <button type="button" class="btn btn-outline-danger"> Main Attractions </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  </div>
+
+
+
+</div>
+
+  <script>
+
+    function multiplyNode(node, count, deep) {
+      for (var i = 0, copy; i < count - 1; i++) {
+          copy = node.cloneNode(deep);
+          node.parentNode.insertBefore(copy, node);
+      }
+    }
+
+    multiplyNode(document.querySelector('.card'), 100, true);
+
+  </script>
+
+
+</div>
+
+
+
+
+</div></body></html>
